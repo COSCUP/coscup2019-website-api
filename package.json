@@ -1,7 +1,7 @@
 {
-  "name": "coscup2018-website-api",
+  "name": "coscup2019-website-api",
   "version": "0.1.0",
-  "description": "COSCUP 2018 website API",
+  "description": "COSCUP 2019 website API",
   "scripts": {
     "build": "npm run build:compile-yaml && npm run build:copy-assets && npm run build:crawl-exported-api",
     "clean": "rm -r dist/",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/COSCUP/coscup2018-website-api.git"
+    "url": "git+https://github.com/COSCUP/coscup2019-website-api.git"
   },
   "keywords": [
     "COSCUP"
@@ -23,9 +23,9 @@
   "author": "COSCUP",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/COSCUP/coscup2018-website-api/issues"
+    "url": "https://github.com/COSCUP/coscup2019-website-api/issues"
   },
-  "homepage": "https://github.com/COSCUP/coscup2018-website-api#readme",
+  "homepage": "https://github.com/COSCUP/coscup2019-website-api#readme",
   "devDependencies": {
     "any-json": "^3.1.0"
   }
