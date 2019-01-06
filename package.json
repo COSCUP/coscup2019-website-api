@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "COSCUP 2019 website API",
   "scripts": {
-    "build": "npm run build:compile-yaml && npm run build:copy-assets && npm run build:crawl-exported-api",
+    "build": "npm run build:compile-yaml",
     "clean": "rm -r dist/",
     "rebuild": "npm run clean && npm run build",
     "dist": "git subtree push --prefix=dist origin gh-pages",
