@@ -14,19 +14,23 @@ for lang in "${LANGS[@]}"; do
 	mkdir -p "$PLACE"
 
 	# Fetch staffs
-	curl -Lo "${PLACE}/staffs.json" "https://script.google.com/a/coscup.tw/macros/s/AKfycbxz2kOgLEPrk1fjvO6jWAFdOKkQquR4SpU2R2Zv6KgEvwXqk5Di/exec?lang=$lang"
+	# curl -Lo "${PLACE}/staffs.json" "https://script.google.com/a/coscup.tw/macros/s/AKfycbxz2kOgLEPrk1fjvO6jWAFdOKkQquR4SpU2R2Zv6KgEvwXqk5Di/exec?lang=$lang"
+	echo '{ "teams":{}, "members":[] }' > "${PLACE}/staffs.json"
 
 	# Fetch sponsors
-	curl -Lo "${PLACE}/sponsors.json" "https://script.google.com/macros/s/AKfycbx49lzZ60QVcHXFmrqLFwOi4j09r3WnBQQCaFao_BGNOT8gukM/exec?lang=$lang"
-	$TOOLS/process-sponsors.sh "${PLACE}/sponsors.json"
+	# curl -Lo "${PLACE}/sponsors.json" "https://script.google.com/macros/s/AKfycbx49lzZ60QVcHXFmrqLFwOi4j09r3WnBQQCaFao_BGNOT8gukM/exec?lang=$lang"
+	# $TOOLS/process-sponsors.sh "${PLACE}/sponsors.json"
+	echo '{ "levels":{}, "sponsors":[] }'> "${PLACE}/sponsors.json"
 
 	# Fetch cohosts
-	curl -Lo "${PLACE}/cohosts.json" "https://script.google.com/a/coscup.tw/macros/s/AKfycbyEYqMFjcP2I3NofpseX3s1gs1Fq7OAz6ryqUJ_Tg/exec?lang=$lang"
-	$TOOLS/process-cohosts.sh "${PLACE}/cohosts.json"
+	# curl -Lo "${PLACE}/cohosts.json" "https://script.google.com/a/coscup.tw/macros/s/AKfycbyEYqMFjcP2I3NofpseX3s1gs1Fq7OAz6ryqUJ_Tg/exec?lang=$lang"
+	# $TOOLS/process-cohosts.sh "${PLACE}/cohosts.json"
+	echo '{ "levels":{}, "cohosts":[] }'> "${PLACE}/cohosts.json"
 
 	# Fetch programs
-	curl -Lo "${PLACE}/programs.json" "https://script.google.com/macros/s/AKfycbwm9gZrW9H3tN_qk-sW2kIJ4i2BFJu4CJkguRIRekxBM6k1zcjN/exec?lang=$lang"
-	$TOOLS/process-programs.sh "${PLACE}/programs.json"
+	# curl -Lo "${PLACE}/programs.json" "https://script.google.com/macros/s/AKfycbwm9gZrW9H3tN_qk-sW2kIJ4i2BFJu4CJkguRIRekxBM6k1zcjN/exec?lang=$lang"
+	# $TOOLS/process-programs.sh "${PLACE}/programs.json"
+	echo '{ "talks":{}, "tracks":{}, "speakers":{}, "communities":{} }' > "${PLACE}/programs.json"
 
 	# Generate talks
 	node $TOOLS/generate-talks.js $lang
