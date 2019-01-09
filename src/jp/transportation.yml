@@ -1,8 +1,8 @@
 address: 106 台北市大安區基隆路四段 43 號
 place: 台灣科技大學
 location:
-    lat: 25.013454
-    lng: 121.540429
+    lat: 25.013740
+    lng: 121.540551
 transportation:
     metro:
         name: 台北捷運
