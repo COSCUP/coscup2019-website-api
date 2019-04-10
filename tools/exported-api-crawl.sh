@@ -18,9 +18,8 @@ for lang in "${LANGS[@]}"; do
 	echo '{ "teams":{}, "members":[] }' > "${PLACE}/staffs.json"
 
 	# Fetch sponsors
-	# curl -Lo "${PLACE}/sponsors.json" "https://script.google.com/macros/s/AKfycbx49lzZ60QVcHXFmrqLFwOi4j09r3WnBQQCaFao_BGNOT8gukM/exec?lang=$lang"
-	# $TOOLS/process-sponsors.sh "${PLACE}/sponsors.json"
-	echo '{ "levels":{}, "sponsors":[] }'> "${PLACE}/sponsors.json"
+	curl -Lo "${PLACE}/sponsors.json" "https://script.google.com/macros/s/AKfycbz8ZgSZoLK_ylD87_mPJrjtJwIJ9XJqsGBcYSTPta5H5gQauik/exec?lang=$lang"
+	$TOOLS/process-sponsors.sh "${PLACE}/sponsors.json"
 
 	# Fetch cohosts
 	# curl -Lo "${PLACE}/cohosts.json" "https://script.google.com/a/coscup.tw/macros/s/AKfycbyEYqMFjcP2I3NofpseX3s1gs1Fq7OAz6ryqUJ_Tg/exec?lang=$lang"
