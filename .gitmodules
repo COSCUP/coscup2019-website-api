@@ -1,0 +1,3 @@
+[submodule "schedule-json-generator"]
+	path = schedule-json-generator
+	url = https://github.com/CCIP-App/schedule-json-generator.git
