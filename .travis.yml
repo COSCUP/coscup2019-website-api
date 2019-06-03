@@ -15,6 +15,7 @@ before_script:
 
 script:
   - npm run build
+  - git submodule init && git submodule update && cp config.js schedule-json-generator/ && cd schedule-json-generator/ && yarn && node index.js > ../dist/programs.json
 
 deploy:
   provider: pages
