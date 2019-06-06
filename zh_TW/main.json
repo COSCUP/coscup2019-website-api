@@ -2,9 +2,9 @@
     "description": "2019 年 8 月 17、18 日",
     "place": "台灣科技大學",
     "registration": {
-        "start_at": null,
-        "end_at": null,
-        "link": null
+        "start_at": "2019-07-10 20:00",
+        "end_at": "2019-08-11 00:00",
+        "link": "https://coscup2019.kktix.cc/events/coscup2019regist"
     },
     "program": {
         "call_for_proposal": {
