@@ -14,8 +14,7 @@ for lang in "${LANGS[@]}"; do
 	mkdir -p "$PLACE"
 
 	# Fetch staffs
-	# curl -Lo "${PLACE}/staffs.json" "https://script.google.com/a/coscup.tw/macros/s/AKfycbxz2kOgLEPrk1fjvO6jWAFdOKkQquR4SpU2R2Zv6KgEvwXqk5Di/exec?lang=$lang"
-	echo '{ "teams":{}, "members":[] }' > "${PLACE}/staffs.json"
+	curl -Lo "${PLACE}/staffs.json" "https://script.google.com/macros/s/AKfycbzLwVwgGfl0GAjPXj_7OzSwVMeTSd4xr0fjsmkXGvGziLgzdahl/exec?lang=$lang"
 
 	# Fetch sponsors
 	curl -Lo "${PLACE}/sponsors.json" "https://script.google.com/macros/s/AKfycbz8ZgSZoLK_ylD87_mPJrjtJwIJ9XJqsGBcYSTPta5H5gQauik/exec?lang=$lang"
