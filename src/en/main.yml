@@ -20,7 +20,12 @@ program:
         email: "program@coscup.org"
 
 area:
-    images: {}
+    images:
+        1f: /assets/1f.jpg
+        2f: /assets/2f.jpg
+        3f: /assets/3f.jpg
+        4f: /assets/4f.jpg
+        5f: /assets/5f.jpg
 
 sponsorship:
     contact:
