@@ -21,6 +21,7 @@ program:
 
 area:
     images:
+        campusmap: /assets/campusmap.jpg
         1f: /assets/1f.jpg
         2f: /assets/2f.jpg
         3f: /assets/3f.jpg
