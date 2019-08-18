@@ -22,11 +22,9 @@ program:
 area:
     images:
         campusmap: /assets/campusmap.jpg
-        1f: /assets/1f.jpg
-        2f: /assets/2f.jpg
-        3f: /assets/3f.jpg
-        4f: /assets/4f.jpg
-        5f: /assets/5f.jpg
+        3f: /assets/TR3F.jpg
+        4f: /assets/TR4F.jpg
+        5f: /assets/TR5F.jpg
 
 sponsorship:
     contact:
